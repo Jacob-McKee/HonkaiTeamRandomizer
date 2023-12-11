@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>My Web Page</title>
 
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-
+<body onload="populateCharacters()">
     <div style="display: flex; flex-direction: column; align-items: center;">
         <form style="display: flex; flex-wrap: wrap; justify-content: center;">
             <input type="text" id="string1" name="string1" value="Character 1" readonly>
@@ -19,93 +19,10 @@
         </form>
         <hr>
         <h2> Select the Characters You Have</h2>
-        <div class="grid-container">
-
-            <div class="grid-container">
-                <input type="checkbox" id="kiana" name="character" value="kiana">
-                <label for="kiana">Kiana</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="mei" name="character" value="mei">
-                <label for="mei">Mei</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="bronya" name="character" value="bronya">
-                <label for="bronya">Bronya</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="himeko" name="character" value="himeko">
-                <label for="himeko">Himeko</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="sakura" name="character" value="sakura">
-                <label for="sakura">Sakura</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="theresa" name="character" value="theresa">
-                <label for="theresa">Theresa</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="fu-hua" name="character" value="fu-hua">
-                <label for="fu-hua">Fu Hua</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="kallen" name="character" value="kallen">
-                <label for="kallen">Kallen</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="rita" name="character" value="rita">
-                <label for="rita">Rita</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="seele" name="character" value="seele">
-                <label for="seele">Seele</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="ganesha" name="character" value="ganesha">
-                <label for="ganesha">Ganesha</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="bronya" name="character" value="bronya">
-                <label for="bronya">Bronya</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="himeko" name="character" value="himeko">
-                <label for="himeko">Himeko</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="sakura" name="character" value="sakura">
-                <label for="sakura">Sakura</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="theresa" name="character" value="theresa">
-                <label for="theresa">Theresa</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="fu-hua" name="character" value="fu-hua">
-                <label for="fu-hua">Fu Hua</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="kallen" name="character" value="kallen">
-                <label for="kallen">Kallen</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="rita" name="character" value="rita">
-                <label for="rita">Rita</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="seele" name="character" value="seele">
-                <label for="seele">Seele</label><br>
-            </div>
-            <div class="grid-container">
-                <input type="checkbox" id="ganesha" name="character" value="ganesha">
-                <label for="ganesha">Ganesha</label><br>
-            </div>
+        <div class="grid-container" id="CharacterList">
         </div>
-        <button type="button" onclick="myFunction()">Randomize</button>
+        <button type="button" onclick="myFunction();">Randomize</button>
     </div>
-    
-    <script src="script.js"></script>
 </body>
 
 </html>

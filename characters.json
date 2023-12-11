@@ -1,23 +1,23 @@
 {
     "Argenti": {
-        "portrait": "argenti.webp"
+        "portrait": "argenti.png"
     },
     "Bailu": {
-        "portrait": "bailu.webp"
+        "portrait": "bailu.png"
     },
     "Blade": {
-        "portrait": "blade.webp"
+        "portrait": "blade.png"
     },
     "Bronya": {
-        "portrait": "bronya.webp"
+        "portrait": "bronya.png"
     },
     "Clara": {
-        "portrait": "clara.webp"
+        "portrait": "clara.png"
     },
     "Dan Heng": {
-        "portrait": "dan_heng.webp"
+        "portrait": "dan heng.png"
     },
     "Fu Xuan": {
-        "portrait": "fu_xuan.webp"
+        "portrait": "fu xuan.png"
     }
 }
