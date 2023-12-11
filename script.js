@@ -68,6 +68,7 @@ function populateCharacters() {
         const image = document.createElement('img');
         image.src = "CharacterImages/" + characterData.portrait;
         image.alt = character;
+        //image.style.setProperty("background-color", "red");
 
         const label = document.createElement('label');
         label.htmlFor = character;
