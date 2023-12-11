@@ -1,4 +1,4 @@
-/* Background gradient using Honkai Star Rail colors */
+/* Reset and basic styling */
 html, body {
     height: 100%;
     margin: 0;
@@ -6,8 +6,8 @@ html, body {
 
 body {
     background: linear-gradient(to bottom, #7243A1, #353A83, #0088C0, #00B3E1, #AEE5FF);
-    font-family: 'Arial', sans-serif; /* Change the font family as needed */
-    color: #fff; /* Set text color to white for better visibility on the gradient */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,8 +38,8 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 150px; /* Adjust the fixed height as needed */
-    transition: border-color 0.3s ease; /* Add transition for smooth effect */
+    height: 150px;
+    transition: border-color 0.3s ease;
 }
 
 /* Character image container styling */
@@ -49,7 +49,7 @@ hr {
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+    transition: background-color 0.3s ease;
 }
 
 /* Character portrait image styling */
@@ -72,15 +72,33 @@ hr {
 
 /* Style for the character image container when checkbox is checked */
 .grid-container input[type="checkbox"]:checked + .character-item .img-container {
-    border-color: #b3ffb3; /* Change the border color of the image when checked */
+    border: 2px solid #b3ffb3;
 }
 
-/* Additional styles for other elements in your content */
-.content-div {
-    margin-top: 100px; /* Adjust the margin as needed */
+/* Style for the string boxes and labels */
+.string-container {
+    text-align: center;
+    margin: 10px;
+}
+
+.string-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.string-container label {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
 }
 
 /* Style for the character image when checkbox is checked */
 .character-item input[type="checkbox"]:checked + .img-container {
-    border: 2px solid #b3ffb3; /* Change the border color of the image when checked */
+    border: 2px solid #b3ffb3;
 }

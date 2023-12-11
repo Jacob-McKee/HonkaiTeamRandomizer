@@ -9,12 +9,25 @@
 </head>
 
 <body onload="populateCharacters()">
+    <h1>Honkai Star Rail Team Randomizer</h1>
     <div style="display: flex; flex-direction: column; align-items: center;">
         <form style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <input type="text" id="string1" name="string1" value="Character 1" readonly>
-            <input type="text" id="string2" name="string2" value="Character 2" readonly>
-            <input type="text" id="string3" name="string3" value="Character 3" readonly>
-            <input type="text" id="string4" name="string4" value="Character 4" readonly>
+            <div class="string-container">
+                <img class="string-box" id="string1"></img>
+                <label for="string1" id="label1">Character 1</label>
+            </div>
+            <div class="string-container">
+                <img class="string-box" id="string2"></img>
+                <label for="string2" id="label2">Character 2</label>
+            </div>
+            <div class="string-container">
+                <img class="string-box" id="string3"></img>
+                <label for="string3" id="label3">Character 3</label>
+            </div>
+            <div class="string-container">
+                <img class="string-box" id="string4"></img>
+                <label for="string4" id="label4">Character 4</label>
+            </div>
         </form>
         <hr>
         <h2>Select the Characters You Have</h2>

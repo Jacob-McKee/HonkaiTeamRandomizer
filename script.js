@@ -30,13 +30,22 @@ function myFunction() {
             randomCheckboxes.push(randomCheckbox);
         }
     }
-    console.log(randomCheckboxes);
-    // Put the selected checkboxes in the form fields
+
+    // Display the pictures and names of the randomly selected checkboxes
     randomCheckboxes.forEach((checkbox, index) => {
-        const formField = document.getElementById(`string${index + 1}`);
-        formField.value = checkbox.value;
+        const characterData = characters[checkbox.value]; // Assuming characters is the data object
+
+        // Display the character picture
+        const characterImage = document.getElementById(`string${index + 1}`);
+        characterImage.src = "CharacterImages/" + characterData.portrait;
+        characterImage.alt = checkbox.value;
+
+        // Display the character name
+        const characterName = document.getElementById(`label${index + 1}`);
+        characterName.textContent = checkbox.value;
     });
 }
+
 
 function populateCharacters() {
     const characterList = document.getElementById('CharacterList');
@@ -76,5 +85,3 @@ function populateCharacters() {
         characterList.appendChild(characterDiv);
     }
 }
-// Call the populateCharacters function when the body is loaded
-document.body.onload = populateCharacters;

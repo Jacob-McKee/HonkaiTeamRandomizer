@@ -1,6 +1,12 @@
 {
+    "Arlan": {
+        "portrait": "Arlan.png"
+    },
     "Argenti": {
         "portrait": "Argenti.png"
+    },
+    "Asta": {
+        "portrait": "Asta.png"
     },
     "Bailu": {
         "portrait": "Bailu.png"
@@ -17,7 +23,97 @@
     "Dan Heng": {
         "portrait": "Dan Heng.png"
     },
+    "Dan Heng Imbibitor": {
+        "portrait": "Dan Heng Imbibitor.png"
+    },
     "Fu Xuan": {
         "portrait": "Fu Xuan.png"
+    },
+    "Gepard": {
+        "portrait": "Gepard.png"
+    },
+    "Guinaifen": {
+        "portrait": "Guinaifen.png"
+    },
+    "Hanya": {
+        "portrait": "Hanya.png"
+    },
+    "Herta": {
+        "portrait": "Herta.png"
+    },
+    "Himeko": {
+        "portrait": "Himeko.png"
+    },
+    "Hook": {
+        "portrait": "Hook.png"
+    },
+    "Huohuo": {
+        "portrait": "Huohuo.png"
+    },
+    "Jing Yuan": {
+        "portrait": "Jing Yuan.png"
+    },
+    "Jingliu": {
+        "portrait": "Jingliu.png"
+    },
+    "Kafka": {
+        "portrait": "Kafka.png"
+    },
+    "Luka": {
+        "portrait": "Luka.png"
+    },
+    "Luocha": {
+        "portrait": "Luocha.png"
+    },
+    "Lynx": {
+        "portrait": "Lynx.png"
+    },
+    "March 7th": {
+        "portrait": "March 7th.png"
+    },
+    "Natasha": {
+        "portrait": "Natasha.png"
+    },
+    "Pela": {
+        "portrait": "Pela.png"
+    },
+    "Qingque": {
+        "portrait": "Qingque.png"
+    },
+    "Sampo": {
+        "portrait": "Sampo.png"
+    },
+    "Seele": {
+        "portrait": "Seele.png"
+    },
+    "Serval": {
+        "portrait": "Serval.png"
+    },
+    "Silver Wolf": {
+        "portrait": "Silver Wolf.png"
+    },
+    "Sushang": {
+        "portrait": "Sushang.png"
+    },
+    "Tingyun": {
+        "portrait": "Tingyun.png"
+    },
+    "Topaz": {
+        "portrait": "Topaz.png"
+    },
+    "Trailblazer Fire": {
+        "portrait": "Trailblazer Fire.png"
+    },
+    "Trailblazer Physical": {
+        "portrait": "Trailblazer Physical.png"
+    },
+    "Welt": {
+        "portrait": "Welt.png"
+    },
+    "Yanqing": {
+        "portrait": "Yanqing.png"
+    },
+    "Yukong": {
+        "portrait": "Yukong.png"
     }
 }
