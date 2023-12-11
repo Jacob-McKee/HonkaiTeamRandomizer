@@ -57,7 +57,7 @@ function populateCharacters() {
 
         // Create the image element for the character portrait
         const image = document.createElement('img');
-        image.src = "CharacterImages/" + characterData.portrait;
+        image.src = "HonkaiTeamRandomizer/CharacterImages/" + characterData.portrait;
         image.alt = character;
 
         // Create the label for the checkbox (name under the portrait)
