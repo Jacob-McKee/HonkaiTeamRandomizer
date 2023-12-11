@@ -1,9 +1,29 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+/* Background gradient using Honkai Star Rail colors */
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
+body {
+    background: linear-gradient(to bottom, #7243A1, #353A83, #0088C0, #00B3E1, #AEE5FF);
+    font-family: 'Arial', sans-serif; /* Change the font family as needed */
+    color: #fff; /* Set text color to white for better visibility on the gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* General grid styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-content: space-around;
+}
+
+/* Horizontal rule styling */
 hr {
     border: none;
     border-top: 1px solid black;
@@ -13,30 +33,54 @@ hr {
     width: 100%;
 }
 
-/* Style for the character container */
-.grid-container {
-    text-align: center; /* Center the content within the container */
+/* Character container item styling (image and label) */
+.grid-container .character-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px; /* Adjust the fixed height as needed */
+    transition: border-color 0.3s ease; /* Add transition for smooth effect */
 }
 
-/* Style for the character portrait image */
+/* Character image container styling */
+.grid-container .character-item .img-container {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Character portrait image styling */
 .grid-container img {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-    display: block; /* Make the image a block element for better positioning */
-    margin: 0 auto; /* Center the image horizontally */
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-/* Style for the character name label */
+/* Character name label styling */
 .grid-container label {
-    display: block; /* Make the label a block element to appear below the image */
-    margin-top: 5px; /* Adjust the margin as needed */
+    display: block;
+    margin-top: 5px;
 }
 
+/* Hide checkboxes */
 .grid-container input[type="checkbox"] {
     display: none;
 }
 
-/* Style for the character container when checkbox is checked */
-.grid-container input[type="checkbox"]:checked + img {
-    border: 2px solid green; /* Change border color when checked */
+/* Style for the character image container when checkbox is checked */
+.grid-container input[type="checkbox"]:checked + .character-item .img-container {
+    border-color: #b3ffb3; /* Change the border color of the image when checked */
+}
+
+/* Additional styles for other elements in your content */
+.content-div {
+    margin-top: 100px; /* Adjust the margin as needed */
+}
+
+/* Style for the character image when checkbox is checked */
+.character-item input[type="checkbox"]:checked + .img-container {
+    border: 2px solid #b3ffb3; /* Change the border color of the image when checked */
 }

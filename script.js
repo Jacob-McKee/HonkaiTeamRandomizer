@@ -44,44 +44,37 @@ function populateCharacters() {
     for (let character in characters) {
         const characterData = characters[character];
 
-        // Create a container div for each character
         const characterDiv = document.createElement('div');
-        characterDiv.classList.add('grid-container');
+        characterDiv.classList.add('grid-container', 'character-item');
 
-        // Create the checkbox for the character
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.id = character;
         checkbox.name = 'character';
         checkbox.value = character;
 
-        // Create the image element for the character portrait
+        const imgContainer = document.createElement('div');
+        imgContainer.classList.add('img-container');
+
         const image = document.createElement('img');
         image.src = "CharacterImages/" + characterData.portrait;
         image.alt = character;
 
-        // Create the label for the checkbox (name under the portrait)
         const label = document.createElement('label');
         label.htmlFor = character;
         label.textContent = character;
 
-        // Append the image and label to the character div
         characterDiv.appendChild(checkbox);
-        characterDiv.appendChild(image);
+        imgContainer.appendChild(image);
+        characterDiv.appendChild(imgContainer);
         characterDiv.appendChild(label);
 
-        // Add a click event listener to toggle the checkbox state
         characterDiv.addEventListener('click', function () {
-            // Find the associated checkbox
-            const checkbox = document.querySelector(`input[value="${character}"]`);
-            
-            // Toggle the checkbox state
             checkbox.checked = !checkbox.checked;
         });
 
-        // Append the character div to the character list
         characterList.appendChild(characterDiv);
     }
 }
-
-populateCharacters();
+// Call the populateCharacters function when the body is loaded
+document.body.onload = populateCharacters;
