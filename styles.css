@@ -1,9 +1,3 @@
-/* Reset and basic styling */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 body {
     background: linear-gradient(to bottom, #7243A1, #353A83, #0088C0, #00B3E1, #AEE5FF);
     font-family: 'Arial', sans-serif;
@@ -13,12 +7,16 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
+    margin: 0;
+    flex: 1; /* Ensure the body expands to fill the available space */
 }
+
+
 
 /* General grid styling */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 10px;
     justify-content: space-around;
 }
@@ -101,4 +99,21 @@ hr {
 /* Style for the character image when checkbox is checked */
 .character-item input[type="checkbox"]:checked + .img-container {
     border: 2px solid #b3ffb3;
+}
+
+/* Style for the Randomize button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Randomize button */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
