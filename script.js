@@ -83,3 +83,5 @@ function populateCharacters() {
         characterList.appendChild(characterDiv);
     }
 }
+
+populateCharacters();
