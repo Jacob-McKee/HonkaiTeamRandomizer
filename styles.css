@@ -8,10 +8,8 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     margin: 0;
-    flex: 1; /* Ensure the body expands to fill the available space */
+    flex: 1;
 }
-
-
 
 /* General grid styling */
 .grid-container {
@@ -69,7 +67,7 @@ hr {
 }
 
 /* Style for the character image container when checkbox is checked */
-.grid-container input[type="checkbox"]:checked + .character-item .img-container {
+.character-item input[type="checkbox"]:checked + .img-container {
     border: 2px solid #b3ffb3;
 }
 
@@ -96,17 +94,12 @@ hr {
     font-size: 12px;
 }
 
-/* Style for the character image when checkbox is checked */
-.character-item input[type="checkbox"]:checked + .img-container {
-    border: 2px solid #b3ffb3;
-}
-
 /* Style for the Randomize button */
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50; /* Green background color */
-    color: #fff; /* White text color */
+    background-color: #4CAF50;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -115,5 +108,41 @@ button {
 
 /* Hover effect for the Randomize button */
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.string-container {
+    text-align: center;
+    margin: 10px;
+}
+
+.string-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.string-container label {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
 }

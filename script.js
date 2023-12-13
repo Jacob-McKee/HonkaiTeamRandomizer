@@ -23,7 +23,10 @@ function myFunction() {
 
     // Randomly select four unique checkboxes
     const randomCheckboxes = [];
-    while (randomCheckboxes.length < 4 && selectedCheckboxes.length > 0) {
+
+    const maxRandom = selectedCheckboxes.length < 8 ? 4 : 8;
+
+    while (randomCheckboxes.length < maxRandom && selectedCheckboxes.length > 0) {
         const randomIndex = Math.floor(Math.random() * selectedCheckboxes.length);
         const randomCheckbox = selectedCheckboxes.splice(randomIndex, 1)[0];
         if (!randomCheckboxes.includes(randomCheckbox)) {
